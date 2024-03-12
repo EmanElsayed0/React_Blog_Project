@@ -1,0 +1,9 @@
+//
+.img-uploader {
+  @media (max-width: "600px") {
+    flex-direction: column;
+  }
+}
+.card {
+  box-shadow: 1rem 1rem 3rem rgba($color: #7777, $alpha: 0.1);
+}

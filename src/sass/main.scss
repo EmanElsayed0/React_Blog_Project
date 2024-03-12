@@ -1,0 +1,17 @@
+//vendors
+@import "./vendor/_daisy.scss";
+
+//base
+@import "./base/reset";
+@import "./base/utilities";
+
+//components
+@import "../components/shared/Modal/_modal.scss";
+
+//containers
+@import "../container/Home/header/header";
+@import "./layout/container";
+
+//pages
+@import "./page/_home.scss";
+@import "../pages/User/_user.scss";
