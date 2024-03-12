@@ -9,7 +9,7 @@ import ImageUploader from "../../../components/shared/Inputs/upload-imge";
 import { alertMsg } from "../../../utils/alert";
 import { addPost, getPosts } from "../../../services/posts";
 import { handleRes } from "../../../utils/handle-res";
-import Pagination from "../../../components/shared/Pagination";
+
 import { useNavigate } from "react-router-dom";
 
 const PAGE_SIZE = 6;
@@ -105,16 +105,6 @@ export const Posts = ({ user }) => {
             />
           </div>
         ))}
-      </div>
-      <div className="my-10 flex justify-center">
-        {itemsToRender?.length > 0 && (
-          <Pagination
-            totalPages={numberOfPages}
-            currentPage={currPage}
-            next={() => setCurrPage(Math.min(currPage + 1, numberOfPages))}
-            perv={() => setCurrPage(Math.max(currPage - 1, 1))}
-          />
-        )}
       </div>
     </div>
   );
